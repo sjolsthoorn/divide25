@@ -11,7 +11,7 @@ This project provides a REST API interface to calculate the smallest multiple th
 1. Clone repository
 Clone reposistory to location of your choice using
 
-``https://github.com/sjolsthoorn/divide25.git``
+``git clone https://github.com/sjolsthoorn/divide25.git``
 
 2. Navigate to project directory
 
@@ -28,11 +28,16 @@ From the root directory
 ``dotnet build``
 
 2. Run the API
-``dotnet run``
 
-Access the API by visiting the locally running web server which can be obtained from the terminal console that will appear after starting
+http: ``dotnet run``
+
+https: ``dotnet run --launch-profile "https"``
+
+Access the API by visiting the locally running web server which can be obtained from the terminal console that will appear after starting. This is usually ``http://localhost:5000/swagger`` or ``https://localhost:7291/swagger`` for HTTPS
 
 ## Running the tests
+
+Run the following command to execute the tests
 
 ``dotnet test``
 
@@ -70,3 +75,5 @@ public long DivideByWithoutRemainder(int divideBy)
 ```
 
 On my AMD Ryzen X7700 it took 1.5 minute to calculate.
+
+# Made for West Consultency
